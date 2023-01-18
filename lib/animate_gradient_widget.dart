@@ -103,6 +103,9 @@ class _AnimateGradientState extends State<AnimateGradient>
 
   @override
   Widget build(BuildContext context) {
+    primaryColors = widget.primaryColors;
+    secondaryColors = widget.secondaryColors;
+    
     return AnimatedBuilder(
       animation: _animation,
       builder: (BuildContext context, Widget? child) {
