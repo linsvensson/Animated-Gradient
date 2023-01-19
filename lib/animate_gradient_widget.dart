@@ -105,7 +105,9 @@ class _AnimateGradientState extends State<AnimateGradient>
   Widget build(BuildContext context) {
     primaryColors = widget.primaryColors;
     secondaryColors = widget.secondaryColors;
-    
+
+    _colorTween = getColorTweens();
+
     return AnimatedBuilder(
       animation: _animation,
       builder: (BuildContext context, Widget? child) {
